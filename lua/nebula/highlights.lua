@@ -58,7 +58,7 @@ function M.apply_plugins(palette, opts)
     set_hl("TelescopePromptTitle", { fg = palette.bg, bg = palette.accent })
     set_hl("TelescopePreviewTitle", { fg = palette.bg, bg = palette.white_soft })
     set_hl("TelescopeResultsTitle", { fg = palette.bg, bg = "#2B2D3F" })
-    set_hl("TelescopeSelection", { fg = palette.bg, bg = palette.accent })
+    set_hl("TelescopeSelection", { fg = palette.white_soft, bg = palette.accent })
 
     -- Mason
     set_hl("MasonNormal", { bg = palette.bg, fg = palette.fg })
