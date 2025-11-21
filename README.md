@@ -1,7 +1,7 @@
-```markdown
-# nebula-lilac.nvim
 
-A lilac-nebula inspired Neovim colorscheme with optional transparency and first-class highlights for Treesitter, Lualine, Telescope, Mason and Lazy (plugin manager). Use it as a plugin with lazy.nvim or call :colorscheme nebula to load it.
+# nebula.nvim
+
+A nebula inspired Neovim colorscheme with optional transparency and first-class highlights for Treesitter, Lualine, Telescope, Mason and Lazy (plugin manager). Use it as a plugin with lazy.nvim or call :colorscheme nebula to load it.
 
 Preview palette
 - Background: #222436
@@ -10,7 +10,7 @@ Preview palette
 
 Features
 - Dark colorscheme with optional transparent background (for floating terminals / kitty/alacritty backgrounds)
-- :colorscheme nebula and :colorscheme nebula-lilac supported (colors/ shims)
+- :colorscheme nebula and :colorscheme nebula supported (colors/ shims)
 - Treesitter-friendly highlights
 - Integrations for: lualine, telescope, mason, lazy, nvim-tree, treesitter
 - Terminal color mappings
@@ -19,14 +19,14 @@ Installation (lazy.nvim)
 ```lua
 -- lazy.nvim
 {
-  "sajadshafi/nebula-lilac.nvim",
+  "sajadshafi/nebula.nvim",
   config = function()
     -- Example: enable transparency
-    require("nebula-lilac").setup({ transparent = true })
-    require("nebula-lilac").apply()
+    require("nebula").setup({ transparent = true })
+    require("nebula").apply()
 
     -- Lualine integration example:
-    -- require('lualine').setup({ options = { theme = require('nebula-lilac').lualine_theme() } })
+    -- require('lualine').setup({ options = { theme = require('nebula').lualine_theme() } })
   end
 }
 ```
@@ -34,28 +34,28 @@ Installation (lazy.nvim)
 Installation (packer.nvim)
 ```lua
 use {
-  "sajadshafi/nebula-lilac.nvim",
+  "sajadshafi/nebula.nvim",
   config = function()
-    require("nebula-lilac").setup({ transparent = false })
-    require("nebula-lilac").apply()
+    require("nebula").setup({ transparent = false })
+    require("nebula").apply()
   end
 }
 ```
 
 Load as colorscheme
 - :colorscheme nebula
-- :colorscheme nebula-lilac
+- :colorscheme nebula
 
 API
-- require("nebula-lilac").setup(opts)
+- require("nebula").setup(opts)
   - opts.transparent = boolean (default false)
   - opts.styles = table, keys: comments, keywords, functions, cursorline_nr
-- require("nebula-lilac").apply()
+- require("nebula").apply()
   - apply the colorscheme now (useful in config or after changing setup)
 
 Lualine integration
 ```lua
-require('lualine').setup({ options = { theme = require('nebula-lilac').lualine_theme() } })
+require('lualine').setup({ options = { theme = require('nebula').lualine_theme() } })
 ```
 
 Notes about plugin integrations
