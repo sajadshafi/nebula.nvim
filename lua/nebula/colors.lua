@@ -6,11 +6,11 @@ M.palette = {
     -- core
     bg         = "#222436", -- background
     fg         = "#FFF4D2", -- foreground
-    accent     = "#C099FF", -- primary accent / border
-    border     = "#C099FF",
+    accent     = "#FF014F", -- primary accent / border
+    border     = "#FF014F",
 
     -- derived / complementary colors
-    dim        = "#9A86D5",
+    dim        = "#d6879f",
     muted      = "#9EA6C8",
     yellow     = "#FFD98A",
     red        = "#FF6B6B",
